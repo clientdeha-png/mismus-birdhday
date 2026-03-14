@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Muskan Birthday</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+background:url("file:///C:/Users/HP/OneDrive/Documents/WhatsApp%20Image%202026-03-14%20at%2011.49.28%20AM.jpeg");
+background-size:cover;
+background-position:center;
+font-family:Arial;
+}
+
+/* password box */
+
+.passwordBox{
+
+position:absolute;
+
+/* phone locker screen position */
+
+top:55%;
+left:65%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+}
+
+/* input */
+
+input{
+
+width:120px;
+padding:10px;
+font-size:20px;
+text-align:center;
+border:none;
+border-radius:8px;
+}
+
+/* button */
+
+button{
+
+margin-top:10px;
+padding:10px 20px;
+border:none;
+border-radius:8px;
+background:gold;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* page2 */
+
+#page2{
+
+display:none;
+height:100vh;
+background:pink;
+color:white;
+text-align:center;
+padding-top:200px;
+font-size:40px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div id="page1">
+
+<div class="passwordBox">
+
+<input type="password" id="pass" placeholder="••••">
+
+<br>
+
+<button onclick="unlock()">ENTER</button>
+
+</div>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div id="page2">
+
+🎉 Happy Birthday Muskan 🎉
+
+</div>
+
+
+<script>
+
+function unlock(){
+
+var p=document.getElementById("pass").value;
+
+if(p==="1907"){
+
+document.getElementById("page1").style.display="none";
+
+document.getElementById("page2").style.display="block";
+
+}
+
+else{
+
+alert("Wrong Password");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
